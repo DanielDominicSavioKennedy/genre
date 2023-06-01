@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+body{
+    background: #000000 !important;
+}
+
+.cd{
+    position: absolute;
+    top: 30%;
+    left: -7%;
+    z-index: 1;
+    height: 60%;
+}
+
+.inputDnD {
+    .form-control-file {
+        z-index: 10;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 6em;
+      outline: none;
+      visibility: hidden;
+      cursor: pointer;
+      background-color:#CC3E3E;
+      &:before {
+        content: attr(data-title);
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        width: 100%;
+        min-height: 6em;
+        line-height: 2em;
+        padding-top: 1.5em;
+        opacity: 1;
+        visibility: visible;
+        text-align: center;
+        border: 0.25em dashed currentColor;
+        transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+        overflow: hidden;
+      }
+      &:hover {
+        &:before {
+          border-style: solid;
+          box-shadow: inset 0px 0px 0px 0.25em currentColor;
+        }
+      }
+    }
+  }
+
+
+  .genre {
+    position: relative;
+    color: white;
+    font-family: 'Righteous', serif;
+    font-size: 12em; 
+    text-shadow: .03em .03em 0 #CC3E3E;
+    z-index: 10;
+    }
+    .genre:after {
+      content: attr(data-shadow);
+      top: .06em; left: .06em;
+      z-index: -1;
+      text-shadow: none;
+      background-image:
+        linear-gradient(
+          45deg,
+          transparent 45%,
+          hsla(48,20%,90%,1) 45%,
+          hsla(48,20%,90%,1) 55%,
+          transparent 0
+          );
+      background-size: .05em .05em;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    
+      animation: shad-anim 15s linear infinite;
+      }
+  
+  @keyframes shad-anim {
+    0% {background-position: 0 0}
+    0% {background-position: 100% -100%}
+    }
