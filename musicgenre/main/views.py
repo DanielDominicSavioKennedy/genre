@@ -4,8 +4,8 @@ from .metadata import getdata
 from .predict import predict_genre
 # Create your views here.
 
-def main(request):
-    return HttpResponse("Hello")
+def home(request):
+    return render(request,"home.html")
 
 def classify(request):
     if request.method == 'POST':
