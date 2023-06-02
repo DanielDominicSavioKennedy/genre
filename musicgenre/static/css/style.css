@@ -12,6 +12,8 @@ body{
     height: 60%;
 }
 
+
+
 .inputDnD {
     .form-control-file {
         z-index: 10;
@@ -22,7 +24,7 @@ body{
       outline: none;
       visibility: hidden;
       cursor: pointer;
-      background-color:#CC3E3E;
+      background-color:#9c9c9c;
       &:before {
         content: attr(data-title);
         position: absolute;
@@ -71,7 +73,6 @@ body{
           transparent 0
           );
       background-size: .05em .05em;
-      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     
       animation: shad-anim 15s linear infinite;
@@ -81,3 +82,7 @@ body{
     0% {background-position: 0 0}
     0% {background-position: 100% -100%}
     }
+
+.boxes{
+  background-color: aliceblue;
+}

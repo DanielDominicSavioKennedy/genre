@@ -1,12 +1,98 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock title %}
 
 {% block main %}
+<style>
+  .boxes{
+    background-color: aliceblue;
+    width:60%;
+    z-index: 10;
+  }
+  .con h1{
+    color:white;
+  }
+  .con h3{
+    color:#9c9c9c;
+  }
+ b{
+    color:#CC3E3E;
+  }
+  .container{z-index: 10;}
+  .container .top{z-index: 10;}
 
-<h1>Find the genre of the music you like</h1>
-<h3>Using KNN algorithm</h3>
+  .row{z-index: 10;}
+</style>
 
-['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz',
-       'metal', 'pop', 'reggae', 'rock']
+<div class="container con">
+  <div class="top">
+  <h1><b>F</b>ind the genre of the music you like</h1>
+  <h3>Using <b>K<d style="color:white">N</d>N</b> algorithm</h3>
+</div>
+</div>
 
+<div class="container text-center d-flex justify-content-center">
+  <div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/blues.jpg' %}" style="width:90%" alt="">
+        <h3>Blues</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/classic.jpg' %}" style="width:90%" alt="">
+        <h3>Classic</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/country.jpg' %}" style="width:90%" alt="">
+        <h3>Country</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/disco.jpg' %}" style="width:90%" alt="">
+        <h3>Disco</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/hiphop.jpg' %}" style="width:90%" alt="">
+        <h3>Hip Hop</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/jazz.jpg' %}" style="width:90%" alt="">
+        <h3>Jazz</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/metal.jpg' %}" style="width:90%" alt="">
+        <h3>Metal</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/pop.jpg' %}" style="width:90%" alt="">
+        <h3>Pop</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/raggea.jpg' %}" style="width:90%" alt="">
+        <h3>Reggae</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" boxes" >
+        <img class="images px-0 py-2" src="{% static 'images/rock.jpg' %}" style="width:90%" alt="">
+        <h3>Rock</h3>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock main %}
