@@ -11,10 +11,12 @@ def classify(request):
     if request.method == 'POST':
         uploadfile = request.FILES['document']
         #print(uploadfile.name)
-        #print(uploadfile.size)
+        print(uploadfile.size)
+        
         if not uploadfile.name.endswith('.wav'):
             messages.error(request,'Only .wav file type is allowed')
             return redirect(classify)
+
         meta = getdata(uploadfile)
         pred=predict_genre(meta)
         return render(request,'classify.html',{"result":pred[0]})
