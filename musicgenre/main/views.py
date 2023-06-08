@@ -2,7 +2,7 @@ from django.shortcuts import render,HttpResponse,redirect
 from django.contrib import messages
 from .metadata import getdata
 from .predict import predict_genre
-
+          
 def home(request):
     return render(request,"home.html")
 
