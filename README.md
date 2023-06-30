@@ -76,21 +76,11 @@ To use this application locally, follow these steps:
 
 4. Wait for the prediction to complete. The predicted genre label will be displayed on the screen.
 
-## Customization
-
-You can customize the behavior of the application by modifying the following files:
-
-- `music_classification/knn_classifier.py`: This file contains the implementation of the KNN algorithm for genre prediction. You can modify the algorithm or experiment with different feature extraction techniques to improve the accuracy of predictions.
-
-- `music_classification/genres.py`: This file contains a dictionary mapping genre labels to their corresponding class indices. You can modify this dictionary to include or remove genres as needed.
 
 ## Contributing
 
 Contributions to this project are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. Make sure to follow the existing coding style and guidelines.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
