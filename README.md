@@ -17,7 +17,7 @@ To use this application locally, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/music-genre-prediction.git
+   git clone https://github.com/DanielDominicSavioKennedy/genre.git
    ```
 
 2. Change into the project directory:
