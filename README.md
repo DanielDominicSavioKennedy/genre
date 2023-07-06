@@ -92,4 +92,4 @@ Contributions to this project are welcome! If you find any issues or have sugges
 
 ## Contact
 
-If you have any questions or need further assistance, feel free to contact the project maintainer at [email protected]
+If you have any questions or need further assistance, feel free to contact the project maintainer at saviodomnic2002@gmail.com
